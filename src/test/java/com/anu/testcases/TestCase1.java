@@ -31,6 +31,6 @@ public class TestCase1 {
 
 		String str = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='password']/div[2]/div[2]"))).getText();
 		System.out.println(str);
-		Assert.assertEquals(str, "Enter a password");
+		Assert.assertEquals(str, "Enter a password","Test case fail");
 	}
 }
