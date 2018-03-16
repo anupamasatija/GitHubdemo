@@ -21,7 +21,7 @@ public class TestCase1 {
 		wait = new WebDriverWait(driver, 5);
 		
 		driver.get("http://gmail.com");
-		System.out.println("gmail launched");
+		System.out.println("gmail ");
 		driver.manage().window().maximize();
 		driver.findElement(By.id("identifierId")).sendKeys("testuser1@gmail.com");
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//*[@class='CwaK9'])[2]"))).click();
